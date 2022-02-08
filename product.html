@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="slider-def.css" type="text/css">
+	<title>Products</title>
+
+	<link rel="icon" href="icon.png">
+</head>
+<style>
+  *{
+    scroll-behavior: smooth;
+  }
+
+  .fade-in{
+    animation: fadeIn 9.5s;
+    font-size: 40px;
+    font-weight: bolder;
+    
+   
+    background-color: green;
+    
+  }
+  @keyframes fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+  }
+  .label {
+     margin-left: 600px;
+    margin-right: 600px;
+    border:3px; 
+    border-style:solid; 
+    border-color: #D8D8D8;
+  }
+  .lol:hover{
+    color: grey;
+  }
+  /* .p{
+    color: white;
+  }
+a:hover{
+  color: grey;
+} */
+  </style>
+<!-- <style>
+		<meta name="viewport" content="width=device-width, initial-scale=1">* {
+			box-sizing: border-box
+		}
+   
+		@media only screen and (max-width: 300px) {
+			.prev,
+			.next,
+			.text {
+				font-size: 11px
+			}
+		}
+    </style> -->
+<body style="background-color: rgb(69, 66, 66);  ">
+  <a name="top"></a>
+   <nav role="navigation" class="sticky">
+  <ul>
+   <li><a href="index.html">Home</a></li>
+    <li class="active"><a>Products</a>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
+		<li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+
+
+
+
+<!-- Slider -->
+    <div id="slider">
+      <div class="slides">
+        <div class="slider">
+          <div class="legend"></div>
+          <div class="content">
+            <div class="content-txt">
+              <p><b><a href="#fruits">FRUITS</p></b></a>
+              <p style="color: white;">Check out some of our finest and freshest fruits!</p>
+            </div>
+          </div>
+          <div class="image">
+            <img src="fruitsWide.jpg">
+          </div>
+        </div>
+        
+        <div class="slider">
+          <div class="legend"></div>
+          <div class="content">
+            <div class="content-txt">
+              <p><b><a href="#snacks" class="lol">SNACKS</p></b></a>
+              <p style="color: white">Check out some of our yummy snacks for a taste of India!</p>
+            </div>
+          </div>
+          
+          <div class="image">
+            <img src="snacksWide.jpg">
+          </div>
+        </div>
+        <div class="slider">
+          <div class="legend"></div>
+          <div class="content">
+            <div class="content-txt">
+              <p><b><a href="#vegetables">VEGETABLES</p></b></a>
+              <p style="color: white">Check out some of our freshest vegetables!</p>
+            </div>
+          </div>
+          <div class="image">
+            <img src="vegetablesWide.jpg">
+          </div>
+        </div>
+        <div class="slider">
+          <div class="legend"></div>
+          <div class="content">
+            <div class="content-txt">
+              <p><b><a href="#frozen_goods">FROZEN GOODS</p></b></a>
+              <p style="color: white">Check out some of our frozen goods!</p>
+            </div>
+          </div>
+          <div class="image">
+            <img src="frozenWide.jpg">
+          </div>
+        </div>
+      
+      <div class="slider">
+          <div class="legend"></div>
+          <div class="content">
+            <div class="content-txt">
+              <p><b><a href="#sweets">SWEETS</p></b></a>
+              <p style="color: white;">Check out some tasties sweets, handcrafted and authentic!</p>
+            </div>
+          </div>
+          <div class="image">
+            <img src="sweetsWide.jpg">
+          </div>
+        </div>
+        
+      <!-- <div class="switch">
+        <ul>
+          <li>
+            <div class="on"></div>
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    </div> -->
+
+
+</div>
+<div class="product-text">
+  <table style="margin-left: auto; margin-right: auto;">
+  <tr>
+    <td>
+      <h2>PRODUCTS</h2>
+    </td>
+  </tr>
+  </table> 
+ 
+ </div>
+ </div>
+<br />
+<br />
+<script>
+  src="https://code.jquery.com/jquery-3.6.0.js">
+    </script>
+    <script type = "text/javascript">
+    $(document).on('scroll', function()){
+      $('div').css("left",Math.max(500- 0.35*window.scrollY)
+      + "px");
+
+    })
+    </script>
+  
+    
+<p class="fade-in label" id="fruits" style="color: white">FRUITS</p>
+     
+<br />
+<br />
+<br />
+
+<br />
+<div class="myDiv">
+<table class="products_table fade-in" style="background-image: url(fruitTable.jpg); width:100%; background-repeat: no-repeat; background-size: cover;">
+  <div class="tableText">
+  <tr> 
+    <td class="tableText"><h3>Bananas</h3></td>
+  </tr>
+  <tr>  <td> <br /> </td></tr>
+  <tr> 
+    <td class="tableText"><h3>Pomegranate</h3></td>
+    
+  </tr>
+  <tr>  <td> <br /> </td></tr>
+  <tr> 
+    <td class="tableText"><h3>Pears</h3></td>
+  </tr>
+  <tr>  <td> <br /> </td></tr>
+  <tr> 
+    <td class="tableText"><h3><h3>Apples</h3></td>
+  </tr>
+  <tr>  <td> <br /> </td></tr>
+    <tr> 
+    <td class="tableText"><h3>Oranges</h3></td>
+  </tr>
+  <tr>  <td> <br /> </td></tr>
+    <tr> 
+    <td class="tableText"><h3>Guava</h3></td>
+  </tr>
+  <tr>  <td> <br /> </td></tr>
+  <tr> 
+    <td class="tableText"><h3>Mango</h3></td>
+  </tr>
+  <tr>  <td> <br /> </td></tr>
+  <tr> 
+    <td class="tableText"><h3>Lychee</h3></td>
+  </tr>
+  <tr>  <td> <br /> </td></tr>
+  
+</table>
+</div>
+</div>
+<br />
+<br />
+<br />
+<br />
+
+<br />
+<p class="fade-in label" id="snacks" style="color: white">SNACKS</p>
+<br />
+<br />
+<br />
+
+<br />
+<div class="myDiv">
+ <table class="products_table fade-in" style="background-image: url(snacksTable.jpg); width:100%; background-repeat: no-repeat; background-size: cover;">
+    <tr>
+      <td class="tableText"><h3>Samosas</h3></td>
+    </tr>  
+    <tr>  <td> <br /> </td></tr>
+    <tr>
+      <td class="tableText"><h3>Kachori</h3></td>
+    </tr>  
+    <tr>  <td> <br /> </td></tr>
+    <tr>
+      <td class="tableText"><h3>Maagi</h3>
+    </td></tr>
+    <tr>  <td> <br /> </td></tr>
+     <tr>
+      <td class="tableText"><h3>Chips</h3>
+    </td></tr>
+    <tr>  <td> <br /> </td></tr>
+     <tr>
+      <td class="tableText"><h3>Khatta Meetha</h3>
+    </td></tr>
+    <tr>  <td> <br /> </td></tr>
+     <tr>
+      <td class="tableText"><h3>Bhujia</h3>
+    </td></tr>
+    <tr>  <td> <br /> </td></tr>
+     <tr>
+      <td class="tableText"><h3>Chana Choor</h3>
+    </td></tr>
+    <tr>  <td> <br /> </td></tr>
+
+  </table>
+</div>
+</div>
+<br />
+<br />
+<br />
+<br />
+<p class="fade-in label" id="vegetables" style="color: white">VEGETABLES</p>
+<br />
+<br />
+<br />
+<div class="myDiv">
+ <table class="products_table fade-in" style="background-image: url(vegetablesTable.jpg); width:100%; background-repeat: no-repeat; background-size: cover;">
+    <tr> 
+      <td class="tableText"><h3>Round Tomatoes</h3></td>
+    </tr>
+    <tr>  <td> <br /> </td></tr>
+    <tr> 
+      <td class="tableText"><h3>Plum Tomatoes</h3></td>
+    </tr>
+    <tr>  <td> <br /> </td></tr>
+    <tr> 
+      <td class="tableText"><h3>Green Beans</h3></td>
+    </tr>
+    <tr>  <td> <br /> </td></tr>
+    <tr> 
+      <td class="tableText"><h3><h3>Bellpeppers</h3></td>
+    </tr>
+    <tr>  <td> <br /> </td></tr>
+    <tr> 
+      <td>
+        <h3><a href="moreVegetables.html"><button>See more</button></a></h3>
+      </td>
+    </tr>
+    <tr>  <td> <br /> </td></tr>
+    
+  </table>
+</div>
+<br />
+<br />
+<p class="fade-in label" id="frozen_goods" style="color: white">FROZEN GOODS</p>
+<br />
+<br />
+<br />
+<div class="myDiv">
+  <table class="products_table fade-in" style="background-image: url(frozenTable.jpg); width:100%; background-repeat: no-repeat; background-size: cover;">
+    <tr>
+      <td class="tableText"><h3>Frozen Samosas</h3></td>
+    </tr>
+    <tr>  <td> <br /> </td></tr>
+    <tr>
+      <td class="tableText"><h3>Paratha</h3></td>
+    </tr>  
+    <tr>  <td> <br /> </td></tr>
+    <tr>
+      <td class="tableText"><h3>Frozen Mixed Vegetables</h3></td>
+    </tr>  
+    <tr>  <td> <br /> </td></tr>
+    <tr>
+      <td class="tableText"><h3>Paneer</h3>
+    </td>
+    </tr>
+    <tr>  <td> <br /> </td></tr>
+    <tr>
+    <td class="tableText"><h3>Shredded Coconut</h3></td>
+    </tr>
+    <tr>  <td> <br /> </td></tr>
+  </table>
+</div>
+<br />
+<br />
+<p class="fade-in label" id="sweets" style="color: white">SWEETS</p>
+<br />
+<br />
+<br />
+<div class="myDiv">
+<table class="products_table fade-in" style="background-image: url(sweetsTable.jpg); width:100%; background-repeat: no-repeat; background-size: cover;">
+    <tr>
+      <td class="tableText"><h3>Jalebi</h3></td>
+    </tr>
+    <tr>  <td> <br /> </td></tr>
+    <tr>
+      <td class="tableText"><h3>Rasgulla</h3></td>
+    </tr> 
+    <tr>  <td> <br /> </td></tr> 
+    <tr>
+      <td class="tableText"><h3>Soan Papdi</h3></td>
+    </tr> 
+    <tr>  <td> <br /> </td></tr> 
+    <tr>
+      <td class="tableText"><h3>Laddu</h3>
+    </td>
+    </tr>
+    <tr>  <td> <br /> </td></tr>
+    <tr>
+    <td class="tableText"><h3>Plum Cake</h3></td>
+    </tr>
+    <tr>  <td> <br /> </td></tr>
+    <tr>
+      <td class="tableText"><h3>Kaju Katli</h3>
+    </td>
+    </tr><tr>  <td> <br /> </td></tr>
+  </table>
+  </div>
+
+  <br />
+  <br />
+  <br />
+<a href="#top" ><button class="back-to-top" id="myBtn" style="color: white; position: fixed; right: 2rem; bottom: 4rem"> 
+   <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="back-to-top-icon"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M7 11l5-5m0 0l5 5m-5-5v12"
+    />
+  </svg></button>  </a>
+  <script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+mybutton.style.display = "none"
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<footer>
+  
+<ul class="bottom_navbar" style="position: fixed, bottom: 0, width: 100%">
+  <p>Copyright © Kiran Groceries 2022. All Rights Reserved</p></li></a>
+</ul>
+</footer>
+</body>
+</html>
