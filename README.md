@@ -13,3 +13,4 @@ FBLA website design state qualfier submission 2022
 - All images were from 
    - (a) Kiran Groceries 
    - (b) Creative Commons
+- Copyright documentation is in the FBLA website final document
